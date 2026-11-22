@@ -6,6 +6,8 @@ A patient's health story is scattered across visits: a symptom at one, an abnorm
 
 > **Can a longitudinal representation of fragmented clinical events improve prediction of future patient deterioration compared with models that use isolated encounters?**
 
+**▶ Live demo:** https://mosaic-demo.streamlit.app. Module 1 (reconstructing a patient's history across providers) runs interactively in [mosaic-link](https://github.com/safiyakhan46/mosaic-link); this repo is Module 2 (deterioration prediction), and its pilot results are shown in the demo's *Prediction pilot* tab.
+
 ## Hypotheses
 - **H1** – Models using full encounter history achieve higher AUPRC than the same models using only the index admission.
 - **H2** – The gain is largest for patients with 3+ prior admissions.
@@ -98,6 +100,7 @@ Full MIMIC-IV is credentialed-access data. Raw data is never committed (`data/` 
 - [x] Test suite + CI, including an automated future-leakage test
 - [x] Run R1-R3 on the MIMIC-IV demo and add results to RESULTS_demo.md
 - [ ] Re-run H1-H3 and R1-R3 on full MIMIC-IV
-- [ ] Write-up and patient-timeline demo
+- [x] Live demo (Module 1 interactive + Module 2 pilot results)
+- [ ] Write-up
 
 Author: Safiya Salman Khan
