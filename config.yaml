@@ -1,0 +1,25 @@
+# Point this at the MIMIC-IV folder that contains hosp/ and icu/.
+# Demo now:  data/mimic-iv-clinical-database-demo-2.2
+# Full later: data/mimic-iv-3.1   (only the path changes)
+mimic_path: data/mimic-iv-clinical-database-demo-2.2
+
+min_age: 18
+horizon_days: 365        # look-ahead window for the deterioration label
+test_size: 0.2           # share of PATIENTS held out (patient-level split)
+random_state: 42
+
+# MIMIC-IV lab itemids used as features
+labs:
+  creatinine: 50912
+  hemoglobin: 51222
+  wbc: 51301
+  sodium: 50983
+  potassium: 50971
+  glucose: 50931
+  lactate: 50813
+
+# Reliability analysis (run_reliability.py)
+reliability:
+  n_boot: 2000           # patient-level bootstrap resamples
+  alphas: [0.1, 0.2]     # conformal error rates -> 90% and 80% target coverage
+  n_bins: 10             # quantile bins for reliability curves / ECE

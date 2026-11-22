@@ -1,0 +1,16 @@
+feature,mean_abs_shap,type
+prior_los_days,0.9026544059018751,history (cross-visit)
+n_prior_icu,0.8599861948833561,history (cross-visit)
+icu_this_stay,0.8552559834423773,index admission
+last_hemoglobin,0.6584689934366386,index admission
+n_prior_emergency,0.5942094727768594,history (cross-visit)
+n_dx_cumulative,0.5726107630419454,history (cross-visit)
+slope_potassium,0.5316959960623798,history (cross-visit)
+last_glucose,0.4618981173382789,index admission
+age,0.4436459629163631,index admission
+mean_hemoglobin,0.35801873745418145,history (cross-visit)
+mean_potassium,0.35003095589194816,history (cross-visit)
+n_dx,0.34830513845567945,index admission
+slope_wbc,0.32499620981566923,history (cross-visit)
+mean_wbc,0.2911762297356801,history (cross-visit)
+mean_glucose,0.27754904667115127,history (cross-visit)

@@ -1,0 +1,5 @@
+features,model,auprc_mean,auprc_std,auroc_mean,auroc_std
+isolated,lightgbm,0.331,0.022,0.648,0.02
+isolated,logreg,0.374,0.009,0.669,0.009
+longitudinal,lightgbm,0.319,0.021,0.631,0.016
+longitudinal,logreg,0.477,0.031,0.714,0.028
